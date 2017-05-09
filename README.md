@@ -33,3 +33,35 @@ list.add(1);
 list.add(4.0);
 Object value = list.get(0);
 ```
+
+
+##### Generic Method 
+
+We define a class with generics to be able to create instances that handle different types (Integer and String in this case). Therefore the code is correct. The plus sign appends all values calling method toString() to get their String representation, then the last sentence is equivalent to write System.out.println(myClass.get().toString() + yourClass.get().toString()).
+
+```
+public class Class<E> {    
+    private E attribute;
+    
+    public void set (E value){
+        this.attribute = value;
+    }
+    
+    public E get(){
+        return attribute;
+    }
+}
+
+
+
+
+public static void main(String[] args){
+    Class<Integer> myClass = new Class<Integer>();
+    Class<String> yourClass = new Class<String>();
+    myClass.set(0);
+    yourClass.set("0");
+    System.out.println(myClass.get() + yourClass.get());
+}
+```
+
+
