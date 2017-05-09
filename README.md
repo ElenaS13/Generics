@@ -22,3 +22,14 @@ ArrayList<Integer> list2 = new ArrayList<Integer>();
 list2.add("Integer");
 Integer value2 = list2.get(0)
 ```
+
+
+When creating an object of a class that uses generics, such as ArrayList<E>, we need to indicate the type that can be stored in this object (e.g., Integer, String, etc.). E is not a valid type in Java. The code below gives a compilation error because E is not a valid type in Java.
+
+```
+ArrayList<E> list = new ArrayList<E>();
+list.add("a");
+list.add(1);
+list.add(4.0);
+Object value = list.get(0);
+```
