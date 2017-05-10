@@ -76,3 +76,13 @@ Extracting from the tail.
 To extract from the tail we need the reference to the second-to-last node of the list. To get this reference we need to traverse the linked list from the first node.
  
 
+
+
+------
+
+
+To remove the first node in a linked list we need to change the reference stored in top, so that it points to the second element of the list (top = top.getNext();). After running this statement the linked list does not have any reference to the formerly first element of the linked list. The new first element of the list is the formerly second element of the linked list
+
+
+
+------
