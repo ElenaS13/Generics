@@ -92,3 +92,6 @@ The elements of the list are not null, but the element that follows the last nod
 
 
 ------
+
+
+The class implementing the node has two attributes, one to store information in the node and one with a reference to the following node of the list. The class implementing the linked list has only one attribute, which is the first node of the linked list. With this information it is enough to traverse the linked list from the first element to the last one.
