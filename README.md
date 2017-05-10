@@ -65,3 +65,14 @@ public static void main(String[] args){
 ```
 
 
+
+
+##### Exercise
+
+In a linked list where we have the references to the first (top) and last (tail) nodes. Which of the following operations is more computationally expensive?
+
+Extracting from the tail.
+
+To extract from the tail we need the reference to the second-to-last node of the list. To get this reference we need to traverse the linked list from the first node.
+ 
+
