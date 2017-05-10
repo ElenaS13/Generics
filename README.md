@@ -86,3 +86,9 @@ To remove the first node in a linked list we need to change the reference stored
 
 
 ------
+
+
+The elements of the list are not null, but the element that follows the last node of the list is null indeed. So, we need to traverse the array checking whether the following node is null or not.
+
+
+------
